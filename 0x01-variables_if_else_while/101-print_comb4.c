@@ -1,5 +1,5 @@
-101-print_comb4.c
 #include <stdio.h>
+
 /**
   * main - Prints 3 combination of numbers
   *
