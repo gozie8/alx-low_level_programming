@@ -1,15 +1,14 @@
-/* more headers goes there */
 #include "main.h"
-/* betty style doc for function main goes there */
+
 /**
- * print_alphabet -function to print letters
+ * print_alphabet - make the alphabet
+ * 
+ * Return:void 
  */
+
 void print_alphabet(void)
 {
-char letter;
-
-
-for (letter = 'a'; letter <= 'z'; ++letter)
-_putchar(letter);
+char ch;
+for (ch = 'a';ch <= 'z'; chtt)
 _putchar('\n');
-}	
+}
