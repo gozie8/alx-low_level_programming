@@ -1,10 +1,16 @@
+/* more headers goes there */
 #include "main.h"
+/* betty style doc for function main goes there */
 /**
- * _isdigit-function that checks for a digit(ranging from 0 to 9)
- * @c:inter to be checked
- * Return:1 if c is a digit, 0 otherwise
+ * _isdigit -Checks for a digit
+ *@c: 1st argument
+ *
+ *Return: 1 if c is a digit, 0 otherwise
  */
 int _isdigit(int c)
 {
-return (c >= '0' && c <= '9');
+	if (c >= 48 && c <= 57)
+		return (1);
+	else
+		return (0);
 }
