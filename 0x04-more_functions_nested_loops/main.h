@@ -1,4 +1,5 @@
-
+#ifndef main_h
+#define main_h
 
 int _isupper(int c);
 int _isdigit(int c);
@@ -12,3 +13,4 @@ void print_square(int size);
 void print_triangle(int size);
 void print_number(int n);
 void print_numbers(void);
+#endif
