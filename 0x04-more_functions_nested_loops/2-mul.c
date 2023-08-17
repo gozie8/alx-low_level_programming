@@ -1,14 +1,14 @@
+/* more headers goes there */
 #include "main.h"
+/* betty style doc for function main goes there */
 /**
- * mul - function that multiplies two integers
- * @a: a - variable
- * @b: b - variable
- * Return:Always 0.
+ * mul -multiplies two integers
+ *@a: 1st argument
+ *@b: 2nd argument
+ *
+ *Return: Timetable.
  */
 int mul(int a, int b)
 {
-
-int mul;
-mul = a * b;
-return (mul);
+	return (a * b);
 }
