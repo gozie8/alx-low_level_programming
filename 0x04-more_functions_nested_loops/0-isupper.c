@@ -12,5 +12,3 @@ int _isupper(int c)
 		return (1);
 	else
 		return (0);
-}
- 12 changes: 12 additions & 0 deletions12
