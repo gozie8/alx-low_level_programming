@@ -1,18 +1,28 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- * main - check the code
+ * _strcmp -compare two strings
+ * @s1: 1st string
+ * @s2: 2nd string
  *
- * Return: Always 0.
+ * Return: the integer value of the character difference
  */
-int main(void)
+int _strcmp(char *s1, char *s2)
 {
-    char s1[] = "Hello";
-    char s2[] = "World!";
+	int j = 0, k = 0, c;
 
-    printf("%d\n", _strcmp(s1, s2));
-    printf("%d\n", _strcmp(s2, s1));
-    printf("%d\n", _strcmp(s1, s1));
-    return (0);
+	while (s1[j] != '\0' && s2[k] != '\0')
+	{
+		if (s1[j] != s2[k])
+		{
+			c = s1[j] - s2[k];
+			break;
+		}
+		else
+		{
+			c = s1[j] - s2[k];
+		}
+		j++;
+		k++;
+	}
+	return (c);
 }
