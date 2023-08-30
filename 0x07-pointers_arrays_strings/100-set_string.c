@@ -50,22 +50,22 @@ void print_times_table(int n)
  */
 void digit_to_char(int number)
 {
-	int x;
+int x;
 
 
-	if (number >= 10 && number < 100)
-	{
-		_putchar(' ');
-		_putchar(number / 10 + 48);
-		_putchar(number % 10 + 48);
-	}
-	else if (number >= 100)
-	{
-		x = number / 10;
-		_putchar(x / 10 + 48);
-		_putchar(x % 10 + 48);
-		_putchar(number % 10 + 48);
-	}
-	else
-		_putchar(number + 48);
+if (number >= 10 && number < 100)
+{
+_putchar(' ');
+_putchar(number / 10 + 48);
+_putchar(number % 10 + 48);
+}
+else if (number >= 100)
+{
+x = number / 10;
+_putchar(x / 10 + 48);
+_putchar(x % 10 + 48);
+_putchar(number % 10 + 48);
+}
+else
+_putchar(number + 48);
 }
