@@ -1,27 +1,28 @@
 #include <stdio.h>
-#include "main.h"
-
+#include <stdlib.h>
 /**
- * _atoi - converts a string to an integer
- * @s: string to be converted
- *
- * Return: the int converted from the string
+ * main -program that multiplies two numbers
+ * @argc: number of program arguments
+ * @argv: arrayof program arguments
+ * Return: NULL
  */
-
 int main(int argc, char *argv[])
 {
-if (argc != 3)
-{
-printf("Error\n");
-return (1);
-}
+	int i, mul = 1;
 
-int num1 = atoi(argv[1]);
-int num2 = atoi(argv[2]);
-
-int result = num1 * num2;
-
-printf("%d\n", result);
-
-return (0);
+	if (argc == 1)
+	if (argc == 1 || argc != 3)
+	{
+		printf("Error\n");
+		return (1);
+	}
+	else
+	{
+		for (i = 1; i < argc; i++)
+		{
+			mul *= atoi(argv[i]);
+		}
+		printf("%d\n", mul);
+		return (0);
+	}
 }
