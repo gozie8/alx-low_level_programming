@@ -1,19 +1,31 @@
-/* more headers goes there */
 #include "main.h"
-/* betty style doc for function main goes there */
+
 /**
- * _abs -prints the absolute value of the number
- * @n: 1st argument
- *
- * Return: the absolute value of a value.
- */
-int _abs(int n)
+ * _strstr - finds the first occurrence of the substring.
+ * needle in the string haystack.
+ * @haystack: entire string.
+ * @needle: substring.
+ * Return: pointer to the beginning of located substring or
+ * NULL if the substring is not found.
+*/
+char *_strstr(char *haystack, char *needle)
 {
-	if (n < 0)
+	char *bhaystack;
+	char *pneedle;
+
+	while (*haystack != '\0')
 	{
-		n = n * -1;
-		return (n);
+		bhaystack = haystack;
+		pneedle = needle;
+
+		while (*haystack != '\0' && *pneedle != '\0' && *haystack == *pneedle)
+		{
+			haystack++;
+			pneedle++;
+		}
+		if (!*pneedle)
+			return (bhaystack);
+		haystack = bhaystack + 1;
 	}
-	else
-		return (n);
+	return (0);
 }
