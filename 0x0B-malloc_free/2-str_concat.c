@@ -3,7 +3,7 @@
 /**
  * str_concat -function taht concatenates two strings
  * @s1: 1st argument
- * @s2: 2nd argument
+ * @s2: 2nd argument.
  * Return: The returned pointer should point to a newly allocated space
  * in memory which contains the contents of s1, followed by the contents
  * of s2, and null terminated. If NULL is passed, treat it as an empty
