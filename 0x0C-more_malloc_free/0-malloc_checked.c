@@ -13,6 +13,6 @@ void *malloc_checked(unsigned b)
 ptr = malloc(b);
 
 	if (ptr == NULL)
-		exist(98);
+		exit(98);
 	return (ptr);
 }
