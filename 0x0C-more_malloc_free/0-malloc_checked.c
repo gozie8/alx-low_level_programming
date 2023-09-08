@@ -2,14 +2,15 @@
 #include <stdlib.h>
 /**
  * *malloc_checked -allocate memory using malloc
- * @b: number of bytes to allocate 
+ * @b: number of bytes to allocate
  *
  * Return: a pointer to the allocated memory
  */
-void *malloc_checked(unsignedint b)
+void *malloc_checked(unsigned b)
 {
 	void *ptr;
-	ptr = malloc(b);
+
+ptr = malloc(b);
 
 	if (ptr == NULL)
 		exist(98);
