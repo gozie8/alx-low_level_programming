@@ -1,11 +1,8 @@
 #include "dog.h"
 #include <stdlib.h>
-
 /**
- * free_dog - frees dogs.
- * @d: struct dog.
- *
- * Return: no return.
+ * free_dog -function that frees dogs
+ * @d: struct
  */
 void free_dog(dog_t *d)
 {
