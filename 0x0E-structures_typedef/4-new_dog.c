@@ -1,59 +1,15 @@
 #include "dog.h"
 #include <stdlib.h>
-#include <stddef.h>
 /**
- * _strlen -function that returns the lenght of a string
- * @s: 1st argument
- *
- * Return: the length of the string
+ * free_dog -function that frees dogs
+ * @d: struct
  */
-int _strlen(char *s)
+void free_dog(dog_t *d)
 {
-	int i = 0;
-	while (i > -1)
+	if (d)
 	{
-		if (s[i] == '\0')
-			break;
-		i++;
+		free(d->name);
+		free(d->owner);
+		free(d);
 	}
-	return (i);
 }
-/**
- * *_strcpy -function that prints the copies of the string
- * @dest: 1st argument
- * @src: 2nd argument
- *
- * Return: copied string
- */
-char *_strcpy(char *dest, char *src)
-{
-	int l;
-
-	for (l = 0; src[l] != '\0'; l++)
-	{
-		*(dest + l) = *(src + l);
-	}
-	*(dest + l) = '\0';
-	return (dest);
-}
-/**
- * new_dog -function that creates a new dog
- * @name: 1st argument
-@@ -43,7 +61,7 @@ dog_t *new_dog(char *name, float age, char *owner)
-		free(ptr_dog);
-		return (NULL);
-	}
-	ptr_dog->name = name;
-	_strcpy(ptr_dog->name, name);
-
-	ptr_dog->owner = malloc(sizeof(_strlen(owner) + 1));
-	if (ptr_dog->owner == NULL)
-@@ -52,7 +70,7 @@ dog_t *new_dog(char *name, float age, char *owner)
-		free(ptr_dog);
-		return (NULL);
-	}
-	ptr_dog->owner = owner;
-	_strcpy(ptr_dog->owner, owner);
-
-	ptr_dog->age = age;
-	return (ptr_dog);
